@@ -20,6 +20,7 @@ function loadTrack() {
 
 	// Load a new track
 	curr_track.src = "./music/notion.webm";
+	curr_track.loop = true;
 	curr_track.load();
 
 	// Set an interval of 1000 milliseconds
