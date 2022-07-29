@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chanakan Mungtin - Links</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
@@ -16,27 +17,55 @@
           <header>
             <img src="./images/pfp.jpg" width="200" height="220" alt="Chanakan Mungtin">
             <h1>@f_society5591</h1>
-    <audio controls autoplay loop>
-      <source src="./music/notion.webm" type="audio/webm">
-    </audio>
 
-          </header>
-          <ul>
-            <li>
-              <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-                My Website</a>
-            </li>
-            <li>
-              <a href="https://e-z.bio/chanakan5591">Bio</a>
-            </li>
-            <li>
-              <a href="https://github.com/chanakan55991/">
-                <i class="fa-brands fa-github"></i>
+            <div class="player">
+              <div class="details">
+                <div class="now-playing">Now playing: Notion - The Rare Occations</div>
+              </div>
 
-                Github</a>
-            </li>
-          </ul>
+              <!-- Define the section for displaying track buttons -->
+
+              <!-- Define the section for displaying the seek slider-->
+              <div class="slider_container">
+                <div class="buttons">
+                  <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-2x"></i>
+                  </div>
+
+                  <div class="current-time">00:00</div>
+                  <input type="range" min="0" max="100"
+                    value="0" class="seek_slider" onchange="seekTo()">
+                  <div class="total-duration">00:00</div>
+
+                  <i class="fa fa-volume-down"></i>
+                  <input type="range" min="1" max="100"
+                    value="99" class="volume_slider" onchange="setVolume()">
+                  <i class="fa fa-volume-up"></i>
+
+                </div>
+              </div>
+
+
+            </div>
+        </div>
+        </header>
+        <ul>
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house"></i>
+              My Website</a>
+          </li>
+          <li>
+            <a href="https://e-z.bio/chanakan5591">Bio</a>
+          </li>
+          <li>
+            <a href="https://github.com/chanakan55991/">
+              <i class="fa-brands fa-github"></i>
+
+              Github</a>
+          </li>
+        </ul>
+        <script src="./index.js"></script>
   </body>
   </div>
   </div>
