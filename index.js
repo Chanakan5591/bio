@@ -5,6 +5,7 @@ let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 const main = document.querySelector('main')
+const container = document.querySelector('.container')
 
 // Specify globally used values
 let isPlaying = false;
@@ -112,6 +113,6 @@ loadTrack();
 
 window.addEventListener('DOMContentLoaded', () => {
 	main.style.opacity = 1
-	main.style.filter = 'blur(0px)'
-	main.style.backdropFilter = 'blur(10px)'
+	main.style.filter = 'none'
+	container.style.backdropFilter = 'blur(10px) !important'
 })
