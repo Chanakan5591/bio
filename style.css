@@ -75,6 +75,7 @@ main {
   border-radius: 1em;
   border: 2px solid #fff;
   padding: 1em;
+  padding-bottom: 2em;
   width: 78%;
   background-color: #000a;
   display: flex;
@@ -93,6 +94,7 @@ main {
  
 /* Changing the font sizes to suitable ones */
 .now-playing {
+  padding-bottom: 1em;
   font-size: 1rem;
 }
  
@@ -105,8 +107,6 @@ main {
 }
  
 .playpause-track {
-  padding-top: 20px;
-  padding-bottom: 20px;
   opacity: 0.8;
  
   /* Smoothly transition the opacity */
