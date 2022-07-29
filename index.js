@@ -4,6 +4,7 @@ let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
+const main = document.querySelector('main')
 
 // Specify globally used values
 let isPlaying = false;
@@ -108,3 +109,8 @@ function seekUpdate() {
 }
 
 loadTrack();
+
+window.addEventListener('DOMContentLoaded', () => {
+	main.style.opacity = 1
+	main.style.filter = 'blur(0px)'
+})
