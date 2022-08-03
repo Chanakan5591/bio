@@ -111,6 +111,10 @@ function seekUpdate() {
 
 loadTrack();
 
+window.addEventListener("auxclick", (event) => {
+	if (event.button === 1) event.preventDefault();
+});
+
 window.addEventListener('DOMContentLoaded', () => {
 	main.style.opacity = 1
 	main.style.filter = 'none'
